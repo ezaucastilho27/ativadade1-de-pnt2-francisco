@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.pagina {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1f3694;
+  padding: 25px 20px;
+  border-radius: 8px;
+  row-gap: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.pagina-logo {
+  width: 130px;
+}
+
+.lista {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.item-lista {
+  position: relative;
+}
+
+.item-lista a {
+  color: white;
+  font-weight: 500;
+}
+
+.item-lista.selected::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #35da77;
+  top: 22px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 15px;
+}
+
+.username,
+.password {
+  width: 100%;
+  --color: white;
+  --highlight-color-focused: #35da77;
+  font-weight: 600;
+}
+
+.botao-cadastro {
+  border: 2px solid #35da77;
+  background: #35da77;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.botao-cadastro:hover {
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
